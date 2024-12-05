@@ -24,20 +24,30 @@ CSS lahko uporabimo na tri načine:
 <p style="color: blue; font-size: 16px;">To je moder odstavek.</p>
 ```
 
-
-
 #### Internal CSS:
 
-```
-htmlKopiraj kodo
-```
+<head>
+  <style>
+    body {
+      background-color: lightgray;
+    }
+    h1 {
+      color: navy;
+    }
+  </style>
+</head>
 
 #### External CSS:
 
 Datoteka `style.css`:
 
 ```
-cssKopiraj kodo
+body {
+background-color: lightgray;
+}
+h1 {
+color: navy;
+}
 ```
 
 HTML datoteka:
@@ -45,8 +55,6 @@ HTML datoteka:
 ```
 <head><link rel="stylesheet" href="style.css"></head>
 ```
-
-
 
 ## Selektorji v CSS
 
@@ -60,8 +68,6 @@ Selektorji določajo, na katere elemente se bodo pravila CSS uporabljala.
 
 *   **ID selektor (`#id`)**: Izbere element s specifičnim ID-jem.
 
-
-
 ## Lastnosti v CSS
 
 CSS ponuja širok spekter lastnosti za prilagoditev spletnih strani.
@@ -70,39 +76,32 @@ CSS ponuja širok spekter lastnosti za prilagoditev spletnih strani.
 
 *   **Barve in ozadja:**
 
+```
+color: blue;
+background-color: yellow;
+```
+
 *   **Pisave:**
+
+```
+font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+```
 
 *   **Razmiki:**
 
+```
+margin: 20px;
+padding: 10px;
+```
+
 *   **Obrobe:**
 
-
-
-## Postavitve v CSS
-
-CSS omogoča prilagoditev postavitve elementov na strani.
-
-### Primeri postavitev:
-
-*   **Flexbox:**
-
-*   **Grid:**
-
-*   **Float:**
-
-
-
-## Psevdorazredi in psevdoelementi
-
-CSS omogoča uporabo posebnih stanj elementov ali selektorjev.
-
-### Primeri:
-
-*   **Psevdorazredi:**
-
-*   **Psevdoelementi:**
-
-
+```
+border: 2px solid black;
+border-radius: 5px;
+```
 
 ## Prednost in kaskadnost
 
@@ -113,8 +112,6 @@ CSS pravila se uporabljajo glede na njihovo specifičnost:
 2.  **ID selektorji** imajo večjo specifičnost kot razredi.
 
 3.  **Kaskadnost** pomeni, da se pravila nizajo in lahko podedujejo od nadrejenih elementov.
-
-
 
 ## Primer celotnega CSS dokumenta
 
@@ -148,8 +145,4 @@ p {
   background-color: darkblue;
 }
 ```
-
-
-
-
 
