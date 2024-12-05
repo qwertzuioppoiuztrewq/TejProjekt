@@ -17,11 +17,17 @@ Vsak HTML-dokument se začne s strukturo, ki vključuje glavne oznake: `<html>`,
 
 ### Primer osnovne strukture
 
-```
-htmlKopiraj kodo
-```
+<!DOCTYPE html>
 
-
+<html>
+  <head>
+    <title>Moja prva spletna stran</title>
+  </head>
+  <body>
+    <h1>Dobrodošli!</h1>
+    <p>To je moja prva HTML-stran.</p>
+  </body>
+</html>
 
 ## Naslovi
 
@@ -41,8 +47,6 @@ Naslovi so ključni za organizacijo vsebine. HTML podpira šest stopenj naslovov
 
 *   `<h6>` Najmanj pomemben naslov
 
-
-
 ## Poudarki
 
 Uporabite različne oznake za poudarjanje besedila:
@@ -53,25 +57,25 @@ Uporabite različne oznake za poudarjanje besedila:
 
 *   Prečrtano besedilo: `<del>`
 
-
-
 ## Seznami
 
 HTML omogoča urejene in neurejene sezname.
 
 ### Neurejen seznam:
 
-```
-htmlKopiraj kodo
-```
+<ul>
+  <li>Prva točka</li>
+  <li>Druga točka</li>
+  <li>Tretja točka</li>
+</ul>
 
 ### Urejen seznam:
 
-```
-htmlKopiraj kodo
-```
-
-
+<ol>
+  <li>Prva točka</li>
+  <li>Druga točka</li>
+  <li>Tretja točka</li>
+</ol>
 
 ## Koda
 
@@ -83,11 +87,12 @@ V HTML-ju lahko prikažemo kodo z oznako `<code>` za enovrstično kodo ali `<pre
 
 **Blok kode**:
 
-```
-htmlKopiraj kodo
-```
-
-
+<pre>
+  <code>
+    <h1>Naslov</h1>
+    <p>To je odstavek.</p>
+  </code>
+</pre>
 
 ## Tabele
 
@@ -95,11 +100,20 @@ Tabele organizirajo podatke v vrsticah in stolpcih.
 
 ### Primer tabele:
 
-```
-htmlKopiraj kodo
-```
-
-
+<table>
+  <tr>
+    <th>Ime</th>
+    <th>Starost</th>
+  </tr>
+  <tr>
+    <td>Janez</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Marija</td>
+    <td>30</td>
+  </tr>
+</table>
 
 ## Povezave
 
@@ -107,11 +121,7 @@ Povezave v HTML-ju so ustvarjene z oznako `<a>`.
 
 Primer:
 
-```
-htmlKopiraj kodo
-```
-
-
+<a href="https\://www\.example.com"></a>
 
 ## Slike
 
@@ -119,9 +129,5 @@ Slike v HTML-ju dodamo z oznako `<img>`.
 
 Primer:
 
-```
-htmlKopiraj kodo
-```
-
-
+<img src="slika.jpg" alt="Opis slike">
 
