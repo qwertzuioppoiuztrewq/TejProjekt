@@ -9,101 +9,119 @@ description: >-
   spletnem razvoju.
 date: '2024-11-06'
 ---
-A style guide for a website is a set of design standards that define the look, feel, and behavior of a digital product, ensuring consistency and cohesion across all pages and elements. It typically includes guidelines for colors, typography, spacing, buttons, icons, and imagery, as well as instructions on voice and tone for content.
+HTML (HyperText Markup Language) je osnovni gradnik spleta, ki omogoča ustvarjanje strukturiranih dokumentov in spletnih strani. S pomočjo HTML-ja definiramo vsebino in njeno osnovno hierarhijo, ki jo brskalniki interpretirajo in prikazujejo uporabnikom.
 
-# h1 Heading
+## Osnovna struktura HTML-dokumenta
 
-## h2 Heading
+Vsak HTML-dokument se začne s strukturo, ki vključuje glavne oznake: `<html>`, `<head>`, in `<body>`.
 
-### h3 Heading
-
-#### h4 Heading
-
-##### h5 Heading
-
-###### h6 Heading
-
-## Horizontal Rules
-
-***
-
-## Emphasis
-
-**This is bold text**
-
-**This is bold text**
-
-*This is italic text*
-
-*This is italic text*
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Blockquotes can also be nested...
->
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
-
-## Lists
-
-Unordered
-
-*   Lorem ipsum dolor sit amet
-*   Consectetur adipiscing elit
-*   Integer molestie lorem at massa
-
-Ordered
-
-1.  Lorem ipsum dolor sit amet
-2.  Consectetur adipiscing elit
-3.  Integer molestie lorem at massa
-
-## Code
-
-Inline `code`
-
-Block code
+### Primer osnovne strukture
 
 ```
-npm install netlify-cli -g
+htmlKopiraj kodo
 ```
 
-Syntax highlighting
 
-```js
-var foo = function (bar) {
-  return bar++;
-};
 
-console.log(foo(5));
+## Naslovi
+
+Naslovi so ključni za organizacijo vsebine. HTML podpira šest stopenj naslovov, od `<h1>` do `<h6>`, kjer `<h1>` označuje najpomembnejši naslov.
+
+### Primeri naslovov:
+
+*   `<h1>` Glavni naslov
+
+*   `<h2>` Podnaslov
+
+*   `<h3>` Manjši podnaslov
+
+*   `<h4>` Podpodnaslov
+
+*   `<h5>` Skoraj najmanjši podnaslov
+
+*   `<h6>` Najmanj pomemben naslov
+
+
+
+## Poudarki
+
+Uporabite različne oznake za poudarjanje besedila:
+
+*   **Krepko besedilo**: `<strong>` ali `<b>`
+
+*   *Ležeče besedilo*: `<em>` ali `<i>`
+
+*   Prečrtano besedilo: `<del>`
+
+
+
+## Seznami
+
+HTML omogoča urejene in neurejene sezname.
+
+### Neurejen seznam:
+
+```
+htmlKopiraj kodo
 ```
 
-## Tables
+### Urejen seznam:
 
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
+```
+htmlKopiraj kodo
+```
 
-Right aligned columns
 
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
 
-## Links
+## Koda
 
-*   [Next.js on Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
-*   [Use Visual Editor with Next.js](https://docs.netlify.com/visual-editor/frameworks/next/)
+V HTML-ju lahko prikažemo kodo z oznako `<code>` za enovrstično kodo ali `<pre>` za blok kode.
 
-## Image
+### Primer:
 
-Recommended image orientation is horizontal. You can adjust the image component to your needs in `components/CustomImage.js`.
+**Inline koda**: `<div>To je div element.</div>`
 
-![Image alt text](/images/random-image.jpeg "Image Title")
+**Blok kode**:
+
+```
+htmlKopiraj kodo
+```
+
+
+
+## Tabele
+
+Tabele organizirajo podatke v vrsticah in stolpcih.
+
+### Primer tabele:
+
+```
+htmlKopiraj kodo
+```
+
+
+
+## Povezave
+
+Povezave v HTML-ju so ustvarjene z oznako `<a>`.
+
+Primer:
+
+```
+htmlKopiraj kodo
+```
+
+
+
+## Slike
+
+Slike v HTML-ju dodamo z oznako `<img>`.
+
+Primer:
+
+```
+htmlKopiraj kodo
+```
+
+
+
