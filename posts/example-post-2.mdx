@@ -11,12 +11,145 @@ CSS (Cascading Style Sheets) je jezik za oblikovanje spletnih strani. Omogoča p
 ## Osnovna uporaba CSS-ja
 
 CSS lahko uporabimo na tri načine:
-1. **Vgrajeno v HTML (Inline CSS)** - CSS znotraj posameznih elementov.
-2. **V glavi dokumenta (Internal CSS)** - CSS znotraj oznake `<style>`.
-3. **Zunanja datoteka (External CSS)** - CSS v ločeni datoteki, povezani z `<link>`.
+
+1.  **Vgrajeno v HTML (Inline CSS)** - CSS znotraj posameznih elementov.
+2.  **V glavi dokumenta (Internal CSS)** - CSS znotraj oznake `<style>`.
+3.  **Zunanja datoteka (External CSS)** - CSS v ločeni datoteki, povezani z `<link>`.
 
 ### Primeri uporabe:
 
 #### Inline CSS:
+
 ```html
 <p style="color: blue; font-size: 16px;">To je moder odstavek.</p>
+```
+
+
+
+#### Internal CSS:
+
+```
+htmlKopiraj kodo
+```
+
+#### External CSS:
+
+Datoteka `style.css`:
+
+```
+cssKopiraj kodo
+```
+
+HTML datoteka:
+
+```
+<head><link rel="stylesheet" href="style.css"></head>
+```
+
+
+
+## Selektorji v CSS
+
+Selektorji določajo, na katere elemente se bodo pravila CSS uporabljala.
+
+### Osnovni selektorji:
+
+*   **Elementni selektor**: Izbere vse elemente določene vrste.
+
+*   **Razredni selektor (`.class`)**: Izbere vse elemente s specifičnim razredom.
+
+*   **ID selektor (`#id`)**: Izbere element s specifičnim ID-jem.
+
+
+
+## Lastnosti v CSS
+
+CSS ponuja širok spekter lastnosti za prilagoditev spletnih strani.
+
+### Primeri ključnih lastnosti:
+
+*   **Barve in ozadja:**
+
+*   **Pisave:**
+
+*   **Razmiki:**
+
+*   **Obrobe:**
+
+
+
+## Postavitve v CSS
+
+CSS omogoča prilagoditev postavitve elementov na strani.
+
+### Primeri postavitev:
+
+*   **Flexbox:**
+
+*   **Grid:**
+
+*   **Float:**
+
+
+
+## Psevdorazredi in psevdoelementi
+
+CSS omogoča uporabo posebnih stanj elementov ali selektorjev.
+
+### Primeri:
+
+*   **Psevdorazredi:**
+
+*   **Psevdoelementi:**
+
+
+
+## Prednost in kaskadnost
+
+CSS pravila se uporabljajo glede na njihovo specifičnost:
+
+1.  **Inline CSS** ima najvišjo prednost.
+
+2.  **ID selektorji** imajo večjo specifičnost kot razredi.
+
+3.  **Kaskadnost** pomeni, da se pravila nizajo in lahko podedujejo od nadrejenih elementov.
+
+
+
+## Primer celotnega CSS dokumenta
+
+```
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+p {
+  color: gray;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+```
+
+
+
+
+
