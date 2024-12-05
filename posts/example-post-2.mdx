@@ -1,21 +1,155 @@
 ---
 type: Post
-title: Next.js and Netlify - The Perfect Duo for Modern Web Development
+title: Osnove CSSa
 description: >-
-  Consider that for a moment: everything we see around us is assumed to have had
-  a cause and is contingent upon.
+  CSS, ali Cascading Style Sheets, je jezik za oblikovanje spletnih strani. Z
+  njim določamo barve, pisave, razmike, postavitve in druge vizualne vidike HTML
+  elementov. Ta stran ponuja preprost uvod v osnovno strukturo, selektorje,
+  lastnosti in tehnike CSS-ja, ki so ključne za ustvarjanje privlačnih in
+  uporabniku prijaznih spletnih mest.
 date: '2024-10-05'
 ---
+# Uvod v CSS
 
-**This is an example post. There's another one [here](/posts/example-post-1).**
+CSS (Cascading Style Sheets) je jezik za oblikovanje spletnih strani. Omogoča prilagajanje izgleda elementov HTML, kot so barve, pisave, razmiki in postavitve.
 
-Combining **Next.js** and **Netlify** offers a powerful solution for building and deploying modern web applications with ease. Next.js, known for its versatility in handling both static and dynamic content, is a favorite for developers who need a React-based framework that supports server-side rendering, static site generation, and API routes—all essential for dynamic, SEO-friendly sites.
+## Osnovna uporaba CSS-ja
 
-Pairing this with Netlify’s streamlined deployment workflow, continuous integration, and serverless functions provides a smooth, fast, and secure development-to-deployment process. Netlify’s built-in features for **automatic deployment** from Git, **CDN distribution**, and **edge functions** mean Next.js apps can scale easily while maintaining high performance.
+CSS lahko uporabimo na tri načine:
 
-For UI designers and developers, this combo enables rapid iteration, easier A/B testing, and optimized performance without the DevOps overhead. Plus, the ability to leverage **dynamic routing and API integrations** means more control over design and functionality.
+1.  **Vgrajeno v HTML (Inline CSS)** - CSS znotraj posameznih elementov.
+2.  **V glavi dokumenta (Internal CSS)** - CSS znotraj oznake `<style>`.
+3.  **Zunanja datoteka (External CSS)** - CSS v ločeni datoteki, povezani z `<link>`.
 
-## Additional resources
+### Primeri uporabe:
 
-- [Next.js on Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
-- [Use Visual Editor with Next.js](https://docs.netlify.com/visual-editor/frameworks/next/)
+#### Inline CSS:
+
+```html
+<p style="color: blue; font-size: 16px;">To je moder odstavek.</p>
+```
+
+#### Internal CSS:
+
+```
+<head>
+  <style>
+    body {
+      background-color: lightgray;
+    }
+    h1 {
+      color: navy;
+    }
+  </style>
+</head>
+```
+
+#### External CSS:
+
+Datoteka `style.css`:
+
+```
+body {
+background-color: lightgray;
+}
+h1 {
+color: navy;
+}
+```
+
+HTML datoteka:
+
+```
+<head><link rel="stylesheet" href="style.css"></head>
+```
+
+## Selektorji v CSS
+
+Selektorji določajo, na katere elemente se bodo pravila CSS uporabljala.
+
+### Osnovni selektorji:
+
+*   **Elementni selektor**: Izbere vse elemente določene vrste.
+
+*   **Razredni selektor (`.class`)**: Izbere vse elemente s specifičnim razredom.
+
+*   **ID selektor (`#id`)**: Izbere element s specifičnim ID-jem.
+
+## Lastnosti v CSS
+
+CSS ponuja širok spekter lastnosti za prilagoditev spletnih strani.
+
+### Primeri ključnih lastnosti:
+
+*   **Barve in ozadja:**
+
+```
+color: blue;
+background-color: yellow;
+```
+
+*   **Pisave:**
+
+```
+font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+```
+
+*   **Razmiki:**
+
+```
+margin: 20px;
+padding: 10px;
+```
+
+*   **Obrobe:**
+
+```
+border: 2px solid black;
+border-radius: 5px;
+```
+
+## Prednost in kaskadnost
+
+CSS pravila se uporabljajo glede na njihovo specifičnost:
+
+1.  **Inline CSS** ima najvišjo prednost.
+
+2.  **ID selektorji** imajo večjo specifičnost kot razredi.
+
+3.  **Kaskadnost** pomeni, da se pravila nizajo in lahko podedujejo od nadrejenih elementov.
+
+## Primer celotnega CSS dokumenta
+
+```
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+p {
+  color: gray;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+```
+
