@@ -4,16 +4,19 @@ title: Osnove CSSa
 description: neki
 date: '2024-10-05'
 ---
+# Uvod v CSS
 
-**This is an example post. There's another one [here](/posts/example-post-1).**
+CSS (Cascading Style Sheets) je jezik za oblikovanje spletnih strani. Omogoča prilagajanje izgleda elementov HTML, kot so barve, pisave, razmiki in postavitve.
 
-Combining **Next.js** and **Netlify** offers a powerful solution for building and deploying modern web applications with ease. Next.js, known for its versatility in handling both static and dynamic content, is a favorite for developers who need a React-based framework that supports server-side rendering, static site generation, and API routes—all essential for dynamic, SEO-friendly sites.
+## Osnovna uporaba CSS-ja
 
-Pairing this with Netlify’s streamlined deployment workflow, continuous integration, and serverless functions provides a smooth, fast, and secure development-to-deployment process. Netlify’s built-in features for **automatic deployment** from Git, **CDN distribution**, and **edge functions** mean Next.js apps can scale easily while maintaining high performance.
+CSS lahko uporabimo na tri načine:
+1. **Vgrajeno v HTML (Inline CSS)** - CSS znotraj posameznih elementov.
+2. **V glavi dokumenta (Internal CSS)** - CSS znotraj oznake `<style>`.
+3. **Zunanja datoteka (External CSS)** - CSS v ločeni datoteki, povezani z `<link>`.
 
-For UI designers and developers, this combo enables rapid iteration, easier A/B testing, and optimized performance without the DevOps overhead. Plus, the ability to leverage **dynamic routing and API integrations** means more control over design and functionality.
+### Primeri uporabe:
 
-## Additional resources
-
-- [Next.js on Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
-- [Use Visual Editor with Next.js](https://docs.netlify.com/visual-editor/frameworks/next/)
+#### Inline CSS:
+```html
+<p style="color: blue; font-size: 16px;">To je moder odstavek.</p>
